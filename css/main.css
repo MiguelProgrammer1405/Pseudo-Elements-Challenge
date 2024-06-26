@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e3f6f5;
+  font-family: "Playwrite NG Modern", cursive;
+}
+
+.container {
+  max-width: 600px;
+  padding: 0 2rem 2rem;
+  position: relative;
+  background: white;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 8rem;
+  border-radius: 5%;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+}
+
+.img-container {
+  position: relative;
+  top: 0;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 110px;
+}
+
+.img-container::before {
+  position: absolute;
+  border-radius: 50%;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #272343;
+  top: 5%;
+  left: 5%;
+}
+
+.img-container::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  content: "\f10d";
+  width: 30px;
+  height: 30px;
+  background-color: #272343;
+  color: white;
+}
+
+/* stars styles */
+.stars-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.score-img {
+  width: 100%;
+}
+
+/* opinion styles */
+.opinion {
+  margin-top: 2rem;
+  text-align: center;
+  line-height: 2;
+  font-size: 1.2rem;
+}
+
+.opinion::first-letter {
+  font-size: 2rem;
+  line-height: 1;
+  text-transform: capitalize;
+}
+
+.opinion::first-line {
+  text-transform: uppercase;
+  color: #0011ff;
+  font-weight: 700;
+}
+
+/* underline */
+.underline {
+  height: 2px;
+  margin: 2rem auto 1rem;
+  width: 90%;
+  background: #272343;
+}
+
+.customer-name,
+.profession {
+  text-align: center;
+}
+
+.customer-name::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 2rem;
+  font-weight: 900;
+  content: "\f0c3";
+  margin-right: 0.5rem;
+}
+
+/* product description */
+
+.product-description {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1%;
+  margin-bottom: 5rem;
+}
+
+.product-description::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2rem;
+  margin: 0 auto;
+  content: "\f0c6";
+}
+
+.benefit-title {
+  margin-top: 2rem;
+}
+
+.benefits {
+  list-style-type: none;
+  margin-bottom: 3rem;
+}
+
+.benefits li {
+  margin-top: 2rem;
+  text-align: left;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+}
+
+li::marker {
+  content: ">>";
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: red;
+}
+
+.btn {
+  font-family: "Playwrite NG Modern", cursive;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: #bae8e8;
+  padding: 1rem 2rem;
+  border: transparent;
+  border-radius: 5%;
+  font-size: 1.2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f095";
+  margin-left: 1rem;
+  font-size: 2rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: #ffd803;
+  transform: scale(110%, 110%);
+}
