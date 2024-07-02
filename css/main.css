@@ -11,7 +11,7 @@ body {
   font-family: "Playwrite NG Modern", cursive;
 }
 
-.container {
+.customer-opinion {
   max-width: 600px;
   padding: 0 2rem 2rem;
   position: relative;
@@ -22,7 +22,7 @@ body {
   border-radius: 5%;
 }
 
-.img {
+.customer-img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
