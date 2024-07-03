@@ -120,7 +120,15 @@ body {
 
 /* product description */
 
+.container-product-description {
+  border: 2pxz solid red;
+}
+
 .product-description {
+  width: 80vw;
+  background: white;
+  max-width: 600px;
+  margin: 100px auto;
   text-align: center;
   padding: 2rem;
   border-radius: 1%;
